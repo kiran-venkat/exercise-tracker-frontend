@@ -14,6 +14,7 @@ const Exercise = props => (
   </tr>
 )
 
+
 export default class ExercisesList extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +34,7 @@ export default class ExercisesList extends Component {
       })
   }
 
+  
   deleteExercise(id) {
     axios.delete('https://exercise-backend.onrender.com/exercises/'+id)
       .then(response => { console.log(response.data)});
